@@ -82,4 +82,13 @@ extension home: UITableViewDelegate, UITableViewDataSource{
 
      }}
 
-  
+extension UIView {
+
+    var usnp: ConstraintBasicAttributesDSL {
+        if #available(iOS 13.0, *) {
+            return self.safeAreaLayoutGuide.snp
+        } else {
+            return self.snp
+        }
+    }
+}

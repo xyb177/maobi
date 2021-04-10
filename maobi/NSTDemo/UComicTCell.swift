@@ -40,7 +40,7 @@ class UComicTCell: UTableViewCell {
         return sl
     }()
     
-    private lazy var descLabel: UILabel = {
+    /*private lazy var descLabel: UILabel = {
         let dl = UILabel()
         dl.textColor = UIColor.gray
         dl.numberOfLines = 3
@@ -53,24 +53,43 @@ class UComicTCell: UTableViewCell {
         tl.textColor = UIColor.orange
         tl.font = UIFont.systemFont(ofSize: 14)
         return tl
-    }()
+    }()*/
     
     private lazy var orderView: UIImageView = {
         let ow = UIImageView()
         ow.contentMode = .scaleAspectFit
         return ow
     }()
+    private lazy var button1: UIButton = {
+        let b1 = UIButton()
+        b1.setTitle("收藏", for:.normal)
+        b1.layer.cornerRadius=8.0
+        b1.titleLabel?.font = UIFont.systemFont(ofSize: 10.0)
+        b1.backgroundColor=UIColor.blue
+        return b1
+    }()
+    
+    private lazy var button2: UIButton = {
+        let b2 = UIButton()
+        b2.setTitle("选择", for: .normal)
+        b2.layer.cornerRadius=8.0
+        b2.titleLabel?.font = UIFont.systemFont(ofSize: 10.0)
+        b2.backgroundColor = UIColor.red
+        return b2
+    }()
     
     override func configUI() {
         separatorInset = .zero
         
         contentView.addSubview(iconView)
+        iconView.image = UIImage(named: "paris")
         iconView.snp.makeConstraints {
             $0.left.top.bottom.equalToSuperview().inset(UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 0))
-            $0.width.equalTo(100)
+            $0.width.equalTo(200)
         }
         
         contentView.addSubview(titleLabel)
+        titleLabel.text = "田英章楷书入门"
         titleLabel.snp.makeConstraints {
             $0.left.equalTo(iconView.snp.right).offset(10)
             $0.right.equalToSuperview().offset(-10)
@@ -79,6 +98,7 @@ class UComicTCell: UTableViewCell {
         }
         
         contentView.addSubview(subTitleLabel)
+        subTitleLabel.text = "基本笔法"
         subTitleLabel.snp.makeConstraints {
             $0.left.equalTo(iconView.snp.right).offset(10)
             $0.right.equalToSuperview().offset(-10)
@@ -86,12 +106,21 @@ class UComicTCell: UTableViewCell {
             $0.top.equalTo(titleLabel.snp.bottom).offset(5)
         }
         
-        contentView.addSubview(descLabel)
-        descLabel.snp.makeConstraints {
-            $0.left.equalTo(iconView.snp.right).offset(10)
-            $0.right.equalToSuperview().offset(-10)
-            $0.height.equalTo(60)
-            $0.top.equalTo(subTitleLabel.snp.bottom).offset(5)
+        contentView.addSubview(button2)
+        button2.snp.makeConstraints {
+            $0.bottom.equalTo(iconView.snp.bottom)
+            $0.width.equalTo(40)
+            $0.height.equalTo(20)
+            $0.right.equalToSuperview().offset(-20)
+            
+        }
+        
+        contentView.addSubview(button1)
+        button1.snp.makeConstraints {
+            $0.bottom.equalTo(iconView.snp.bottom)
+            $0.width.equalTo(40)
+            $0.height.equalTo(20)
+            $0.right.equalTo(button2.snp.left).offset(-10)
         }
         
         contentView.addSubview(orderView)
@@ -99,14 +128,6 @@ class UComicTCell: UTableViewCell {
             $0.bottom.equalTo(iconView.snp.bottom)
             $0.height.width.equalTo(30)
             $0.right.equalToSuperview().offset(-10)
-        }
-        
-        contentView.addSubview(tagLabel)
-        tagLabel.snp.makeConstraints {
-            $0.left.equalTo(iconView.snp.right).offset(10)
-            $0.right.equalTo(orderView.snp.left).offset(-10)
-            $0.height.equalTo(20)
-            $0.bottom.equalTo(iconView.snp.bottom)
         }
     }
     
@@ -162,4 +183,5 @@ class UComicTCell: UTableViewCell {
     
 
 }
+
 
