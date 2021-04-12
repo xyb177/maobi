@@ -11,6 +11,8 @@ pod 'Kingfisher'
 pod 'Reusable'
 pod 'IBAnimatable'
 pod 'ButtonProgressBar-iOS'
+pod 'AttributedString'
+pod 'SwiftyStarRatingView'
 
   # Pods for NSTDemo
 

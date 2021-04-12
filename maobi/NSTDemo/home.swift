@@ -14,7 +14,6 @@ class home: UIViewController {
     private var scroll = UIScrollView()
     private var content = UIView()
     private var image = UIImageView()
-    private var tabel = UITableView()
     private lazy var searchButton: UIButton = {
         let sn = UIButton(type: .system)
         sn.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width - 20, height: 30)
@@ -43,13 +42,14 @@ class home: UIViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(title: nil,style: .plain,target: nil,action: nil)
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: nil,style: .plain,target: nil,action: nil)
       
-                self.resultTableView.delegate = self
-                self.resultTableView.dataSource = self
-                self.view .addSubview(self.resultTableView)
+        self.resultTableView.delegate = self
+        self.resultTableView.dataSource = self
+        
+        self.view .addSubview(self.resultTableView)
         resultTableView.snp.makeConstraints { $0.edges.equalTo(self.view.usnp.edges) }
-                self.resultTableView.register(cellType: UComicTCell.self)
+        self.resultTableView.register(cellType: UComicTCell.self)
         self.resultTableView = UITableView.init(frame: self.view.bounds, style: UITableView.Style.plain)
-                self.resultTableView.tableFooterView = UIView.init()
+        self.resultTableView.tableFooterView = UIView.init()
     }
     
     
