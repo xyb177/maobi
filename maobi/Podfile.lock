@@ -4,6 +4,7 @@ PODS:
   - IBAnimatable (6.1.0)
   - Kingfisher (6.2.1)
   - Masonry (1.1.0)
+  - ParallaxHeader (3.0.0)
   - Reusable (4.1.1):
     - Reusable/Storyboard (= 4.1.1)
     - Reusable/View (= 4.1.1)
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - IBAnimatable
   - Kingfisher
   - Masonry
+  - ParallaxHeader
   - Reusable
   - SnapKitExtend
   - SwiftyStarRatingView
@@ -31,6 +33,7 @@ SPEC REPOS:
     - IBAnimatable
     - Kingfisher
     - Masonry
+    - ParallaxHeader
     - Reusable
     - SnapKit
     - SnapKitExtend
@@ -42,11 +45,12 @@ SPEC CHECKSUMS:
   IBAnimatable: 99dddd4c0625884a301ba3ecbc1615f8a390368e
   Kingfisher: e71c6fac2aebb1262888cabc2cb13d313362a48f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  ParallaxHeader: a343f55eb38f52a89c5820a77e14cf975b84e6aa
   Reusable: 53a9acf5c536f229b31b5865782414b508252ddb
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SnapKitExtend: aa30cf37196195fae9c4354686cc7710184ebfcc
   SwiftyStarRatingView: a2b0057700e0adeb8e7442c55d99cb53b531d2f4
 
-PODFILE CHECKSUM: e9a69c5b8a15d9c01efeaebac32f11d677fa0769
+PODFILE CHECKSUM: 81debe745ef62f78f0cc91a00dc466aab553ddda
 
 COCOAPODS: 1.10.1

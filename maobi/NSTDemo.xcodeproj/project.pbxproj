@@ -10,6 +10,8 @@
 		7A2DF913261F1848004B1CA7 /* UComicTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DF912261F1848004B1CA7 /* UComicTCell.swift */; };
 		7A2DF9452621C18A004B1CA7 /* MLModelProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DF9442621C18A004B1CA7 /* MLModelProvider.swift */; };
 		7A2DF949262315EF004B1CA7 /* grade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A2DF948262315EF004B1CA7 /* grade.swift */; };
+		7A8480EA2625ABA600E52CB3 /* blueteeth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8480E92625ABA600E52CB3 /* blueteeth.swift */; };
+		7A8480ED2625BCCB00E52CB3 /* Ccell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A8480EC2625BCCB00E52CB3 /* Ccell.swift */; };
 		7AA85F5F25FF7438000D7BA0 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA85F5E25FF7438000D7BA0 /* TabView.swift */; };
 		7AA85F6325FF8040000D7BA0 /* Navigationcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA85F6225FF8040000D7BA0 /* Navigationcontroller.swift */; };
 		7AA85F6825FF8A4F000D7BA0 /* home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA85F6725FF8A4F000D7BA0 /* home.swift */; };
@@ -32,6 +34,8 @@
 		7A2DF912261F1848004B1CA7 /* UComicTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UComicTCell.swift; sourceTree = "<group>"; };
 		7A2DF9442621C18A004B1CA7 /* MLModelProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MLModelProvider.swift; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/MLModelProvider.swift"; sourceTree = "<group>"; };
 		7A2DF948262315EF004B1CA7 /* grade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = grade.swift; sourceTree = "<group>"; };
+		7A8480E92625ABA600E52CB3 /* blueteeth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueteeth.swift; sourceTree = "<group>"; };
+		7A8480EC2625BCCB00E52CB3 /* Ccell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ccell.swift; sourceTree = "<group>"; };
 		7AA85F5E25FF7438000D7BA0 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
 		7AA85F6225FF8040000D7BA0 /* Navigationcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigationcontroller.swift; sourceTree = "<group>"; };
 		7AA85F6725FF8A4F000D7BA0 /* home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = home.swift; sourceTree = "<group>"; };
@@ -156,6 +160,8 @@
 				7A2DF948262315EF004B1CA7 /* grade.swift */,
 				7AA85F6A25FF8C7C000D7BA0 /* SearchView.swift */,
 				7AAC5186260E129300CA2F34 /* UTableViewCell.swift */,
+				7A8480E92625ABA600E52CB3 /* blueteeth.swift */,
+				7A8480EC2625BCCB00E52CB3 /* Ccell.swift */,
 				7A2DF912261F1848004B1CA7 /* UComicTCell.swift */,
 				FA3CB056212CA81800B87FC4 /* UIImage+CoreML.swift */,
 			);
@@ -285,6 +291,8 @@
 				7AA85F5F25FF7438000D7BA0 /* TabView.swift in Sources */,
 				FA3CB057212CA81800B87FC4 /* UIImage+CoreML.swift in Sources */,
 				7A2DF9452621C18A004B1CA7 /* MLModelProvider.swift in Sources */,
+				7A8480EA2625ABA600E52CB3 /* blueteeth.swift in Sources */,
+				7A8480ED2625BCCB00E52CB3 /* Ccell.swift in Sources */,
 				FA3CB043212CA43D00B87FC4 /* AppDelegate.swift in Sources */,
 				7AA85F6B25FF8C7C000D7BA0 /* SearchView.swift in Sources */,
 				7AA85F6325FF8040000D7BA0 /* Navigationcontroller.swift in Sources */,

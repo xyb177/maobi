@@ -13,6 +13,7 @@ pod 'IBAnimatable'
 pod 'ButtonProgressBar-iOS'
 pod 'AttributedString'
 pod 'SwiftyStarRatingView'
+pod 'ParallaxHeader'
 
   # Pods for NSTDemo
 
